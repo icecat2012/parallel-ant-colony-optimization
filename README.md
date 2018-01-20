@@ -1,5 +1,6 @@
 
-# ant_algorithm-ACO
+
+# Ant_algorithm-ACO
 This is a 3 students team project for parallel programing class. In this project, we tried to simulate the real world ants behavior. 
 
 ## Introduction
@@ -7,21 +8,18 @@ This is a 3 students team project for parallel programing class. In this project
 >    
 >  Real world environment is an open space which means that it might be infinite solutions. By using DFS or BFS, we may run out of memory and time. On the other hand, the ACO is superior to dynamic path searching in open space because ants don’t need to memorize the paths they went. However, ACO is facing with computing speed dilemma on basic functions, such as the movements of ants and hormone calculation. Both of these operations will slow down the speed of this algorithm dramatically when the number of ants increase. That’s why we decided to use parallel programing to speed up the algorithm on the coding aspect
 
-## flow chart
+## Flow chart
+S[Start] --> A[Initial]
+--> B[Leave hormone per ant] --> C[Ants choose directions] --> D[Decline hormone map]
+--> E{Done?F:B} --> F[Finish]
 
-```mermaid
-graph LR
-S((Start)) --> A[initial]
-A --> B[Leave hormone per ant]
-B --> C[Ants choose directions]
-C --> D[Decline hormone map]
-D --> E{Done?}
-E --> B
-E --> F((Finish))
-```
-
-## parallel libraries
+## Parallel libraries
 * pthread
 * OpenMP
 * CUDA
 * SSE
+
+## Future work
+* Use CPU and GPU together (pthread + SSE + CUDA)
+* Move all the source code to GPU
+* Build a much simpler model with less parameters.
