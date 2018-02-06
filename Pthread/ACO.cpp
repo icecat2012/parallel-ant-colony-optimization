@@ -180,7 +180,7 @@ void* run_ants(void* data)
 				    remove( "blue.txt" );
 				    layout("blue.txt", blue_horm);
 					remove( "red.txt" );
-				    layout("red.txt", blue_horm);
+				    layout("red.txt", red_horm);
 					exit(0);
 				}
 			}
