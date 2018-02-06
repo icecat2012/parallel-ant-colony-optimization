@@ -29,7 +29,7 @@ sem_t barrier1,barrier2;
 sem_t mutex1,mutex2;
 ant ants[TOTAL_ANTS];
 map3d mmap;
-double blue_horm[MAP_X*MAP_Y*MAP_Z], red_horm[MAP_X*MAP_Y*MAP_Z];
+float blue_horm[MAP_X*MAP_Y*MAP_Z], red_horm[MAP_X*MAP_Y*MAP_Z];
 int total_block, tpoints;
 
 // for sse 
@@ -41,7 +41,7 @@ int matrix_3d_to_1d(int x,int y,int z)
     return z * MAP_X * MAP_Y + y * MAP_X + x;
 }
 
-void layout(const char *file_name, double *horm_array)
+void layout(const char *file_name, float *horm_array)
 {
     FILE *fp;
     fp = fopen(file_name,"a+");
@@ -187,7 +187,7 @@ void* run_ants(void* data)
 				    remove("blue.txt");
 				    layout("blue.txt", blue_horm);
 					remove("red.txt");
-				    layout("red.txt", blue_horm);
+				    layout("red.txt", red_horm);
 					exit(0);
 				}
 			}
