@@ -2,6 +2,7 @@
 
 # Ant_algorithm-ACO
 This is a 3 students team project for parallel programing class. In this project, we tried to simulate the real world ants behavior. 
+The demo video is on Youtube. Link : https://www.youtube.com/watch?v=BTM4Y7a898Q
 
 ## Introduction
 >  The ant colony optimization system (ACO) was published by Dorigo, Maniezzo, and Colorni in 1996. Inspired by the foraging behavior of real ants, ACO have emerged as an efficient computational method to solve combinatorial optimization problems. One of the problems is searching optimal path in the large, unknown and dynamic environments. Especially for finding multi-targets simultaneously on map, many researchers have delivered lots of works to optimize ACO algorithm.  
